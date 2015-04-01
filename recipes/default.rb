@@ -29,8 +29,8 @@ when 'debian'
   apt_repository 'logstash-forwarder' do
     uri 'http://apt.arvados.org'
     components ['wheezy','main']
-    keyserver 'keyserver.ubuntu.com'
-    key '1078ECD7'
+#    keyserver 'keyserver.ubuntu.com'
+#    key '1078ECD7'
   end
   package 'logstash-forwarder'
   template '/etc/init.d/logstash-forwarder' do
